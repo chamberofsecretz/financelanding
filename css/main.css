@@ -19,6 +19,7 @@ h1 {
 }
 h2 {
  font-size: 4rem;
+ line-height: 1.1;
  color: #EA1F64;
  margin: 0;
 }
@@ -124,7 +125,7 @@ input[type="submit"] {
  text-align: center;
  font-size: 2rem;
  border: none;
- margin-top: 15px;
+ margin-top: 5px;
  padding: 6px;
  width: 100%;
  height: auto;
@@ -178,10 +179,10 @@ input[type="submit"]:hover, input[type="submit"]:focus {
 }
 
 li {
- display: inline-block;
- padding: 0 20px;
- font-size: 2.5rem;
- position: relative;
+  display: inline-block;
+  padding: 0 15px;
+  font-size: 2.2rem;
+  position: relative;
 }
 li::after {
  position: absolute;
@@ -228,8 +229,13 @@ footer p{
  font-size: 1.8rem;
 }
 
+@media (max-width: 1177px){
+  .contact-form-bg {
+    height: 550px;
+  }
+}
 
-@media (max-width: 815px) {
+@media (max-width: 1000px) {
  .four.columns {
   margin-top: 30px;
   width: 100%; 
@@ -237,7 +243,32 @@ footer p{
  .eight.columns {
   width: 100%; 
  }
-
+ .contact-form-bg {
+  height: 475px;
+}
+}
+@media (max-width: 630px){
+  ul {
+    padding: 0;
+   }
+   li {
+    font-size: 3rem;
+    padding: 10px 30px;
+    width: 300px;
+    position: relative;
+   }
+   li::after {
+      position: absolute;
+      height: 1px;
+      width: 80px;
+      right: 110px;
+      bottom: -5px;
+   }
+   .contact-form-bg{
+    margin-top: 0;
+    height: 520px;
+   }
+}
 @media (max-width: 450px) {
  .four.columns {
   margin-top: 0;
@@ -260,6 +291,7 @@ footer p{
  }
  .contact-form-bg{
   margin-top: 0;
+  height: 510px;
  }
  .sub-section {
   margin: 50px auto 10px auto;
@@ -274,25 +306,7 @@ footer p{
  .sub-section h2::after {
   margin-left: -20px;
  }
- ul {
-  padding: 0;
- }
- li {
-  font-size: 3rem;
-  padding: 10px 20px;
- }
- li::after {
-  height: 1px;
-  width: 80px;
-  left: 70px;
-  bottom: -5px;
- }
- ul li:nth-child(2)::after {
-  left: 46px;
- }
- ul li:nth-child(3)::after {
-  left: 68px;
- }
+ 
 
  .highlight h2 {
   font-size: 3rem;
